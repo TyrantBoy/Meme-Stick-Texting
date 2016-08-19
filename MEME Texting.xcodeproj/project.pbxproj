@@ -360,7 +360,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "MEME Texting/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.donaldnguyen.timer.MEME-Texting";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donaldnguyen.MEME-Texting";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -373,7 +373,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "MEME Texting/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.donaldnguyen.timer.MEME-Texting";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donaldnguyen.MEME-Texting";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -399,6 +399,7 @@
 				ADAE04691D67605D001C15E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADAE046B1D67605D001C15E8 /* Build configuration list for PBXNativeTarget "MEME Texting" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +408,7 @@
 				ADAE046D1D67605D001C15E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
