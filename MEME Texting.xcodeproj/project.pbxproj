@@ -13,6 +13,16 @@
 		ADAE045E1D67605D001C15E8 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE045D1D67605D001C15E8 /* MessagesViewController.swift */; };
 		ADAE04611D67605D001C15E8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAE045F1D67605D001C15E8 /* MainInterface.storyboard */; };
 		ADAE04631D67605D001C15E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04621D67605D001C15E8 /* Assets.xcassets */; };
+		ADAE046F1D677DCD001C15E8 /* CandyStickerBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE046E1D677DCD001C15E8 /* CandyStickerBrowserViewController.swift */; };
+		ADAE047A1D677F17001C15E8 /* CandyCane.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04711D677F17001C15E8 /* CandyCane.png */; };
+		ADAE047B1D677F17001C15E8 /* Caramel.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04721D677F17001C15E8 /* Caramel.png */; };
+		ADAE047C1D677F17001C15E8 /* ChocolateBar.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04731D677F17001C15E8 /* ChocolateBar.png */; };
+		ADAE047D1D677F17001C15E8 /* ChocolateChip.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04741D677F17001C15E8 /* ChocolateChip.png */; };
+		ADAE047E1D677F17001C15E8 /* DarkChocolate.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04751D677F17001C15E8 /* DarkChocolate.png */; };
+		ADAE047F1D677F17001C15E8 /* GummiBear.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04761D677F17001C15E8 /* GummiBear.png */; };
+		ADAE04801D677F17001C15E8 /* JawBreaker.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04771D677F17001C15E8 /* JawBreaker.png */; };
+		ADAE04811D677F17001C15E8 /* Lollipop.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04781D677F17001C15E8 /* Lollipop.png */; };
+		ADAE04821D677F17001C15E8 /* SourCandy.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04791D677F17001C15E8 /* SourCandy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		ADAE04601D67605D001C15E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		ADAE04621D67605D001C15E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADAE04641D67605D001C15E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADAE046E1D677DCD001C15E8 /* CandyStickerBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandyStickerBrowserViewController.swift; sourceTree = "<group>"; };
+		ADAE04711D677F17001C15E8 /* CandyCane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CandyCane.png; sourceTree = "<group>"; };
+		ADAE04721D677F17001C15E8 /* Caramel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caramel.png; sourceTree = "<group>"; };
+		ADAE04731D677F17001C15E8 /* ChocolateBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChocolateBar.png; sourceTree = "<group>"; };
+		ADAE04741D677F17001C15E8 /* ChocolateChip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChocolateChip.png; sourceTree = "<group>"; };
+		ADAE04751D677F17001C15E8 /* DarkChocolate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkChocolate.png; sourceTree = "<group>"; };
+		ADAE04761D677F17001C15E8 /* GummiBear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GummiBear.png; sourceTree = "<group>"; };
+		ADAE04771D677F17001C15E8 /* JawBreaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JawBreaker.png; sourceTree = "<group>"; };
+		ADAE04781D677F17001C15E8 /* Lollipop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lollipop.png; sourceTree = "<group>"; };
+		ADAE04791D677F17001C15E8 /* SourCandy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SourCandy.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +122,30 @@
 		ADAE045C1D67605D001C15E8 /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				ADAE04701D677F17001C15E8 /* candy */,
 				ADAE045D1D67605D001C15E8 /* MessagesViewController.swift */,
 				ADAE045F1D67605D001C15E8 /* MainInterface.storyboard */,
+				ADAE046E1D677DCD001C15E8 /* CandyStickerBrowserViewController.swift */,
 				ADAE04621D67605D001C15E8 /* Assets.xcassets */,
 				ADAE04641D67605D001C15E8 /* Info.plist */,
 			);
 			path = MessagesExtension;
+			sourceTree = "<group>";
+		};
+		ADAE04701D677F17001C15E8 /* candy */ = {
+			isa = PBXGroup;
+			children = (
+				ADAE04711D677F17001C15E8 /* CandyCane.png */,
+				ADAE04721D677F17001C15E8 /* Caramel.png */,
+				ADAE04731D677F17001C15E8 /* ChocolateBar.png */,
+				ADAE04741D677F17001C15E8 /* ChocolateChip.png */,
+				ADAE04751D677F17001C15E8 /* DarkChocolate.png */,
+				ADAE04761D677F17001C15E8 /* GummiBear.png */,
+				ADAE04771D677F17001C15E8 /* JawBreaker.png */,
+				ADAE04781D677F17001C15E8 /* Lollipop.png */,
+				ADAE04791D677F17001C15E8 /* SourCandy.png */,
+			);
+			path = candy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,8 +241,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADAE04801D677F17001C15E8 /* JawBreaker.png in Resources */,
+				ADAE047C1D677F17001C15E8 /* ChocolateBar.png in Resources */,
+				ADAE04811D677F17001C15E8 /* Lollipop.png in Resources */,
+				ADAE047F1D677F17001C15E8 /* GummiBear.png in Resources */,
 				ADAE04631D67605D001C15E8 /* Assets.xcassets in Resources */,
+				ADAE047E1D677F17001C15E8 /* DarkChocolate.png in Resources */,
+				ADAE04821D677F17001C15E8 /* SourCandy.png in Resources */,
+				ADAE047A1D677F17001C15E8 /* CandyCane.png in Resources */,
 				ADAE04611D67605D001C15E8 /* MainInterface.storyboard in Resources */,
+				ADAE047D1D677F17001C15E8 /* ChocolateChip.png in Resources */,
+				ADAE047B1D677F17001C15E8 /* Caramel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADAE045E1D67605D001C15E8 /* MessagesViewController.swift in Sources */,
+				ADAE046F1D677DCD001C15E8 /* CandyStickerBrowserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +382,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.donaldnguyen.timer.MEME-Texting.MessagesExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donaldnguyen.MEME-Texting.MessagesExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -347,7 +395,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.donaldnguyen.timer.MEME-Texting.MessagesExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.donaldnguyen.MEME-Texting.MessagesExtension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
