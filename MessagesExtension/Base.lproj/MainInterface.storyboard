@@ -20,7 +20,7 @@
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PGa-o5-lDM">
                                 <connections>
-                                    <segue destination="fiH-r5-dfz" kind="embed" id="mlF-DR-o24"/>
+                                    <segue destination="P8J-ct-EDc" kind="embed" id="6q8-Kp-1SX"/>
                                 </connections>
                             </containerView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5H2-QP-7KK">
@@ -55,19 +55,55 @@
             </objects>
             <point key="canvasLocation" x="33.600000000000001" y="64.767616191904054"/>
         </scene>
-        <!--Candy Sticker Browser View Controller-->
-        <scene sceneID="eBA-ML-02G">
+        <!--Sticker Collection View Controller-->
+        <scene sceneID="pfA-Vy-cP3">
             <objects>
-                <viewController id="fiH-r5-dfz" customClass="CandyStickerBrowserViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6gQ-NU-KN4">
+                <collectionViewController id="P8J-ct-EDc" customClass="StickerCollectionViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="YNG-g9-bVc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="439"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dtV-qx-VC6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="fiy-kI-0lq">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StickerCollectionViewCell" id="k4X-z4-iSu" customClass="StickerCollectionViewCell" customModule="MessagesExtension" customModuleProvider="target">
+                                <frame key="frameInset" width="136" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="136" height="136"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hsr-sD-tau" customClass="MSStickerView">
+                                            <frame key="frameInset" width="136" height="50"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="Hsr-sD-tau" firstAttribute="top" secondItem="k4X-z4-iSu" secondAttribute="top" id="3f8-Ix-lC4"/>
+                                    <constraint firstItem="Hsr-sD-tau" firstAttribute="leading" secondItem="k4X-z4-iSu" secondAttribute="leading" id="4Sh-4i-R3r"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hsr-sD-tau" secondAttribute="trailing" id="5JN-wz-4Rx"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hsr-sD-tau" secondAttribute="bottom" id="lSX-U3-mvK"/>
+                                </constraints>
+                                <size key="customSize" width="136" height="136"/>
+                                <connections>
+                                    <outlet property="stickerView" destination="Hsr-sD-tau" id="6qQ-59-y6K"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="P8J-ct-EDc" id="xwA-7I-WU0"/>
+                            <outlet property="delegate" destination="P8J-ct-EDc" id="1JO-YL-oWa"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c21-O0-IUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="674" y="65"/>
+            <point key="canvasLocation" x="621" y="51"/>
         </scene>
     </scenes>
 </document>

@@ -23,6 +23,8 @@
 		ADAE04801D677F17001C15E8 /* JawBreaker.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04771D677F17001C15E8 /* JawBreaker.png */; };
 		ADAE04811D677F17001C15E8 /* Lollipop.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04781D677F17001C15E8 /* Lollipop.png */; };
 		ADAE04821D677F17001C15E8 /* SourCandy.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04791D677F17001C15E8 /* SourCandy.png */; };
+		ADAE04841D67F4E0001C15E8 /* StickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE04831D67F4E0001C15E8 /* StickerCollectionViewCell.swift */; };
+		ADAE04861D67F545001C15E8 /* StickerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE04851D67F545001C15E8 /* StickerCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		ADAE04771D677F17001C15E8 /* JawBreaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JawBreaker.png; sourceTree = "<group>"; };
 		ADAE04781D677F17001C15E8 /* Lollipop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lollipop.png; sourceTree = "<group>"; };
 		ADAE04791D677F17001C15E8 /* SourCandy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SourCandy.png; sourceTree = "<group>"; };
+		ADAE04831D67F4E0001C15E8 /* StickerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewCell.swift; sourceTree = "<group>"; };
+		ADAE04851D67F545001C15E8 /* StickerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,8 @@
 				ADAE04701D677F17001C15E8 /* candy */,
 				ADAE045D1D67605D001C15E8 /* MessagesViewController.swift */,
 				ADAE045F1D67605D001C15E8 /* MainInterface.storyboard */,
+				ADAE04831D67F4E0001C15E8 /* StickerCollectionViewCell.swift */,
+				ADAE04851D67F545001C15E8 /* StickerCollectionViewController.swift */,
 				ADAE046E1D677DCD001C15E8 /* CandyStickerBrowserViewController.swift */,
 				ADAE04621D67605D001C15E8 /* Assets.xcassets */,
 				ADAE04641D67605D001C15E8 /* Info.plist */,
@@ -262,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADAE04861D67F545001C15E8 /* StickerCollectionViewController.swift in Sources */,
+				ADAE04841D67F4E0001C15E8 /* StickerCollectionViewCell.swift in Sources */,
 				ADAE045E1D67605D001C15E8 /* MessagesViewController.swift in Sources */,
 				ADAE046F1D677DCD001C15E8 /* CandyStickerBrowserViewController.swift in Sources */,
 			);
