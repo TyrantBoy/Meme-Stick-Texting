@@ -55,10 +55,3 @@ extension CandyStickerBrowserViewController {
         return stickers[index]
     }
 }
-
-extension CandyStickerBrowserViewController: Chocoholicable {
-    func setChocoholic(_ chocoholic: Bool) {
-        loadStickers(chocoholic)
-        stickerBrowserView.reloadData()
-    }
-}

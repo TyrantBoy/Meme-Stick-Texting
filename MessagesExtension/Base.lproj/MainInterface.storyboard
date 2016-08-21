@@ -18,34 +18,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PGa-o5-lDM">
-                                <connections>
-                                    <segue destination="P8J-ct-EDc" kind="embed" id="6q8-Kp-1SX"/>
-                                </connections>
-                            </containerView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5H2-QP-7KK">
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jrk-Hw-Dad">
                                 <subviews>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lnF-9K-Sdf">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYX-eY-K03">
+                                        <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="handleChocoholicChange:" destination="ObA-dk-sSI" eventType="valueChanged" id="Ye2-Yd-ZrL"/>
+                                            <action selector="categorySelect:" destination="ObA-dk-sSI" eventType="touchUpInside" id="aKn-qY-X1a"/>
                                         </connections>
-                                    </switch>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chocohollic Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhH-K7-UsI">
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoS-FQ-UPf">
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="categorySelect:" destination="ObA-dk-sSI" eventType="touchUpInside" id="Acs-1x-bNk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huH-wf-4gI">
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="categorySelect:" destination="ObA-dk-sSI" eventType="touchUpInside" id="ixZ-Je-6fB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mci-pb-9GH">
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="categorySelect:" destination="ObA-dk-sSI" eventType="touchUpInside" id="gu4-mw-m9n"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mp8-dF-gap">
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="categorySelect:" destination="ObA-dk-sSI" eventType="touchUpInside" id="ojM-5D-RW0"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSg-Jr-jmf">
+                                <connections>
+                                    <segue destination="P8J-ct-EDc" kind="embed" id="Lik-dF-WeZ"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="5H2-QP-7KK" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" constant="16" id="7w0-Tm-IpD"/>
-                            <constraint firstAttribute="trailing" secondItem="PGa-o5-lDM" secondAttribute="trailing" id="SAJ-b5-YPz"/>
-                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="PGa-o5-lDM" secondAttribute="bottom" id="UPs-lK-XfF"/>
-                            <constraint firstItem="5H2-QP-7KK" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" constant="16" id="ZU5-tU-lNQ"/>
-                            <constraint firstItem="PGa-o5-lDM" firstAttribute="top" secondItem="5H2-QP-7KK" secondAttribute="bottom" constant="22" id="pMf-2G-VgF"/>
-                            <constraint firstItem="PGa-o5-lDM" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="q8E-c1-rzk"/>
+                            <constraint firstItem="Jrk-Hw-Dad" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="14o-tI-hml"/>
+                            <constraint firstAttribute="trailing" secondItem="sSg-Jr-jmf" secondAttribute="trailing" id="2Ds-Rl-hRN"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="sSg-Jr-jmf" secondAttribute="bottom" id="JeJ-dU-YKh"/>
+                            <constraint firstItem="sSg-Jr-jmf" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="TNw-9R-2uk"/>
+                            <constraint firstItem="sSg-Jr-jmf" firstAttribute="top" secondItem="Jrk-Hw-Dad" secondAttribute="bottom" constant="8" id="gSp-0V-Lhp"/>
+                            <constraint firstItem="sSg-Jr-jmf" firstAttribute="top" secondItem="Jrk-Hw-Dad" secondAttribute="bottom" constant="8" id="iYo-je-Gkj"/>
+                            <constraint firstItem="Jrk-Hw-Dad" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" constant="10" id="mNP-dG-Cpy"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -53,14 +74,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33.600000000000001" y="64.767616191904054"/>
+            <point key="canvasLocation" x="26" y="58"/>
         </scene>
         <!--Sticker Collection View Controller-->
         <scene sceneID="pfA-Vy-cP3">
             <objects>
                 <collectionViewController id="P8J-ct-EDc" customClass="StickerCollectionViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="YNG-g9-bVc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="439"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="470"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="fiy-kI-0lq">
@@ -77,8 +98,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="136" height="136"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hsr-sD-tau" customClass="MSStickerView">
-                                            <frame key="frameInset" width="136" height="50"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hsr-sD-tau" customClass="MSStickerView">
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </subviews>
@@ -103,7 +123,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c21-O0-IUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="621" y="51"/>
+            <point key="canvasLocation" x="637" y="70"/>
         </scene>
     </scenes>
 </document>

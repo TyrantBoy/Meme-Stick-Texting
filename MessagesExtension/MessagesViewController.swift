@@ -10,17 +10,19 @@ import UIKit
 import Messages
 
 
-protocol Chocoholicable {
-    func setChocoholic(_ chocoholic: Bool)
+protocol Category {
+    func setCategory(_ segmentIndex : Int)
 }
 
 class MessagesViewController: MSMessagesAppViewController {
     
-    @IBAction func handleChocoholicChange(_ sender: UISwitch) {
+    @IBAction func categorySelect(_ sender: UIButton) {
+        print("\n \n \(sender.tag)")
         childViewControllers.forEach({ vc in
-            guard let vc = vc as? Chocoholicable else { return }
-            vc.setChocoholic(sender.isOn)
+            guard let vc = vc as? Category else {return}
+            vc.setCategory(sender.tag)
         })
     }
+    
   //testing
 }

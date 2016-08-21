@@ -62,15 +62,15 @@
 		ADAE04621D67605D001C15E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADAE04641D67605D001C15E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADAE046E1D677DCD001C15E8 /* CandyStickerBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandyStickerBrowserViewController.swift; sourceTree = "<group>"; };
-		ADAE04711D677F17001C15E8 /* CandyCane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CandyCane.png; sourceTree = "<group>"; };
-		ADAE04721D677F17001C15E8 /* Caramel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caramel.png; sourceTree = "<group>"; };
-		ADAE04731D677F17001C15E8 /* ChocolateBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChocolateBar.png; sourceTree = "<group>"; };
-		ADAE04741D677F17001C15E8 /* ChocolateChip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChocolateChip.png; sourceTree = "<group>"; };
-		ADAE04751D677F17001C15E8 /* DarkChocolate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkChocolate.png; sourceTree = "<group>"; };
-		ADAE04761D677F17001C15E8 /* GummiBear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GummiBear.png; sourceTree = "<group>"; };
-		ADAE04771D677F17001C15E8 /* JawBreaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JawBreaker.png; sourceTree = "<group>"; };
-		ADAE04781D677F17001C15E8 /* Lollipop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lollipop.png; sourceTree = "<group>"; };
-		ADAE04791D677F17001C15E8 /* SourCandy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SourCandy.png; sourceTree = "<group>"; };
+		ADAE04711D677F17001C15E8 /* CandyCane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CandyCane.png; path = candy/CandyCane.png; sourceTree = "<group>"; };
+		ADAE04721D677F17001C15E8 /* Caramel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Caramel.png; path = candy/Caramel.png; sourceTree = "<group>"; };
+		ADAE04731D677F17001C15E8 /* ChocolateBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ChocolateBar.png; path = candy/ChocolateBar.png; sourceTree = "<group>"; };
+		ADAE04741D677F17001C15E8 /* ChocolateChip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ChocolateChip.png; path = candy/ChocolateChip.png; sourceTree = "<group>"; };
+		ADAE04751D677F17001C15E8 /* DarkChocolate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DarkChocolate.png; path = candy/DarkChocolate.png; sourceTree = "<group>"; };
+		ADAE04761D677F17001C15E8 /* GummiBear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GummiBear.png; path = candy/GummiBear.png; sourceTree = "<group>"; };
+		ADAE04771D677F17001C15E8 /* JawBreaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = JawBreaker.png; path = candy/JawBreaker.png; sourceTree = "<group>"; };
+		ADAE04781D677F17001C15E8 /* Lollipop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Lollipop.png; path = candy/Lollipop.png; sourceTree = "<group>"; };
+		ADAE04791D677F17001C15E8 /* SourCandy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SourCandy.png; path = candy/SourCandy.png; sourceTree = "<group>"; };
 		ADAE04831D67F4E0001C15E8 /* StickerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewCell.swift; sourceTree = "<group>"; };
 		ADAE04851D67F545001C15E8 /* StickerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,7 +126,7 @@
 		ADAE045C1D67605D001C15E8 /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
-				ADAE04701D677F17001C15E8 /* candy */,
+				ADAE04871D694191001C15E8 /* Category */,
 				ADAE045D1D67605D001C15E8 /* MessagesViewController.swift */,
 				ADAE045F1D67605D001C15E8 /* MainInterface.storyboard */,
 				ADAE04831D67F4E0001C15E8 /* StickerCollectionViewCell.swift */,
@@ -138,20 +138,60 @@
 			path = MessagesExtension;
 			sourceTree = "<group>";
 		};
-		ADAE04701D677F17001C15E8 /* candy */ = {
+		ADAE04871D694191001C15E8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				ADAE04881D694197001C15E8 /* Recent */,
+				ADAE04891D6941A9001C15E8 /* Expressions */,
+				ADAE048B1D6941D2001C15E8 /* Funny */,
+				ADAE048C1D69423C001C15E8 /* Fighting */,
+				ADAE048A1D6941CC001C15E8 /* Sports */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		ADAE04881D694197001C15E8 /* Recent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Recent;
+			sourceTree = "<group>";
+		};
+		ADAE04891D6941A9001C15E8 /* Expressions */ = {
 			isa = PBXGroup;
 			children = (
 				ADAE04711D677F17001C15E8 /* CandyCane.png */,
 				ADAE04721D677F17001C15E8 /* Caramel.png */,
-				ADAE04731D677F17001C15E8 /* ChocolateBar.png */,
-				ADAE04741D677F17001C15E8 /* ChocolateChip.png */,
-				ADAE04751D677F17001C15E8 /* DarkChocolate.png */,
-				ADAE04761D677F17001C15E8 /* GummiBear.png */,
+			);
+			name = Expressions;
+			sourceTree = "<group>";
+		};
+		ADAE048A1D6941CC001C15E8 /* Sports */ = {
+			isa = PBXGroup;
+			children = (
 				ADAE04771D677F17001C15E8 /* JawBreaker.png */,
 				ADAE04781D677F17001C15E8 /* Lollipop.png */,
 				ADAE04791D677F17001C15E8 /* SourCandy.png */,
 			);
-			path = candy;
+			name = Sports;
+			sourceTree = "<group>";
+		};
+		ADAE048B1D6941D2001C15E8 /* Funny */ = {
+			isa = PBXGroup;
+			children = (
+				ADAE04731D677F17001C15E8 /* ChocolateBar.png */,
+				ADAE04741D677F17001C15E8 /* ChocolateChip.png */,
+			);
+			name = Funny;
+			sourceTree = "<group>";
+		};
+		ADAE048C1D69423C001C15E8 /* Fighting */ = {
+			isa = PBXGroup;
+			children = (
+				ADAE04751D677F17001C15E8 /* DarkChocolate.png */,
+				ADAE04761D677F17001C15E8 /* GummiBear.png */,
+			);
+			name = Fighting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
