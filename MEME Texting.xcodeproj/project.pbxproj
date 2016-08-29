@@ -13,7 +13,6 @@
 		ADAE045E1D67605D001C15E8 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE045D1D67605D001C15E8 /* MessagesViewController.swift */; };
 		ADAE04611D67605D001C15E8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAE045F1D67605D001C15E8 /* MainInterface.storyboard */; };
 		ADAE04631D67605D001C15E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04621D67605D001C15E8 /* Assets.xcassets */; };
-		ADAE046F1D677DCD001C15E8 /* CandyStickerBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE046E1D677DCD001C15E8 /* CandyStickerBrowserViewController.swift */; };
 		ADAE047A1D677F17001C15E8 /* CandyCane.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04711D677F17001C15E8 /* CandyCane.png */; };
 		ADAE047B1D677F17001C15E8 /* Caramel.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04721D677F17001C15E8 /* Caramel.png */; };
 		ADAE047C1D677F17001C15E8 /* ChocolateBar.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04731D677F17001C15E8 /* ChocolateBar.png */; };
@@ -25,6 +24,7 @@
 		ADAE04821D677F17001C15E8 /* SourCandy.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04791D677F17001C15E8 /* SourCandy.png */; };
 		ADAE04841D67F4E0001C15E8 /* StickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE04831D67F4E0001C15E8 /* StickerCollectionViewCell.swift */; };
 		ADAE04861D67F545001C15E8 /* StickerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE04851D67F545001C15E8 /* StickerCollectionViewController.swift */; };
+		ADCD696D1D740E8B00B2C145 /* Candies in Resources */ = {isa = PBXBuildFile; fileRef = ADCD696C1D740E8B00B2C145 /* Candies */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +73,7 @@
 		ADAE04791D677F17001C15E8 /* SourCandy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SourCandy.png; path = candy/SourCandy.png; sourceTree = "<group>"; };
 		ADAE04831D67F4E0001C15E8 /* StickerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewCell.swift; sourceTree = "<group>"; };
 		ADAE04851D67F545001C15E8 /* StickerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewController.swift; sourceTree = "<group>"; };
+		ADCD696C1D740E8B00B2C145 /* Candies */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Candies; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +127,7 @@
 		ADAE045C1D67605D001C15E8 /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				ADCD696C1D740E8B00B2C145 /* Candies */,
 				ADAE04871D694191001C15E8 /* Category */,
 				ADAE045D1D67605D001C15E8 /* MessagesViewController.swift */,
 				ADAE045F1D67605D001C15E8 /* MainInterface.storyboard */,
@@ -293,6 +295,7 @@
 				ADAE047F1D677F17001C15E8 /* GummiBear.png in Resources */,
 				ADAE04631D67605D001C15E8 /* Assets.xcassets in Resources */,
 				ADAE047E1D677F17001C15E8 /* DarkChocolate.png in Resources */,
+				ADCD696D1D740E8B00B2C145 /* Candies in Resources */,
 				ADAE04821D677F17001C15E8 /* SourCandy.png in Resources */,
 				ADAE047A1D677F17001C15E8 /* CandyCane.png in Resources */,
 				ADAE04611D67605D001C15E8 /* MainInterface.storyboard in Resources */,
@@ -311,7 +314,6 @@
 				ADAE04861D67F545001C15E8 /* StickerCollectionViewController.swift in Sources */,
 				ADAE04841D67F4E0001C15E8 /* StickerCollectionViewCell.swift in Sources */,
 				ADAE045E1D67605D001C15E8 /* MessagesViewController.swift in Sources */,
-				ADAE046F1D677DCD001C15E8 /* CandyStickerBrowserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
