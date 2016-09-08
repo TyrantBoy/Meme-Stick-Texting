@@ -122,7 +122,7 @@
                     </collectionView>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                            <color key="value" red="0.50196081400000003" green="0.0" blue="0.07013437052419294" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
