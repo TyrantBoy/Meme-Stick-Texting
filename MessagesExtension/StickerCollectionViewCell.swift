@@ -11,4 +11,5 @@ import Messages
 class StickerCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var stickerView: MSStickerView!
     
+    
 }

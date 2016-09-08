@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD2AB6A21D81429D00FD1DA7 /* z.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AD2AB6A11D81429D00FD1DA7 /* z.jpeg */; };
 		ADAE044F1D67605D001C15E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAE044E1D67605D001C15E8 /* Assets.xcassets */; };
 		ADAE04561D67605D001C15E8 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ADAE04551D67605D001C15E8 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ADAE045B1D67605D001C15E8 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADAE045A1D67605D001C15E8 /* Messages.framework */; };
@@ -52,6 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD2AB6A11D81429D00FD1DA7 /* z.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = z.jpeg; sourceTree = "<group>"; };
 		ADAE044B1D67605D001C15E8 /* MEME Texting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MEME Texting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAE044E1D67605D001C15E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADAE04501D67605D001C15E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		ADAE045C1D67605D001C15E8 /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				AD2AB6A11D81429D00FD1DA7 /* z.jpeg */,
 				ADCD696C1D740E8B00B2C145 /* Candies */,
 				ADAE04871D694191001C15E8 /* Category */,
 				ADAE045D1D67605D001C15E8 /* MessagesViewController.swift */,
@@ -289,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD2AB6A21D81429D00FD1DA7 /* z.jpeg in Resources */,
 				ADAE04801D677F17001C15E8 /* JawBreaker.png in Resources */,
 				ADAE047C1D677F17001C15E8 /* ChocolateBar.png in Resources */,
 				ADAE04811D677F17001C15E8 /* Lollipop.png in Resources */,

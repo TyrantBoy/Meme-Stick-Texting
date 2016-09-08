@@ -14,11 +14,36 @@ struct StickerCategory {
     let members: [MSSticker]
 }
 
+
+
+@IBDesignable
 class StickerCollectionViewController: UICollectionViewController {
+    
+  /*  @IBInspectable var cellImage: UIImage! {
+        
+    } */
+    
+    @IBOutlet weak var collectionVw: UICollectionView!
+    
+    @IBInspectable var backgroundColor: UIColor?  {
+        didSet {
+            collectionVw?.backgroundColor = backgroundColor
+        }
+    }
+    
+    /*
+    @IBInspectable var borderColor: UIColor = .clear {
+        didSet {
+            layer.borderColor = borderColor.cgColor
+        }
+    } */
+    
     
     var stickerCategories = [StickerCategory]()
     var categoryName = ""
     
+    
+    /*
     let stickerNameCategories: [String : [String]] = [
         "Recent" : [""],
         "Expressions" : ["CandyCane", "Caramel"],
@@ -26,81 +51,112 @@ class StickerCollectionViewController: UICollectionViewController {
         "Fighting" : ["DarkChocolate", "GummiBear"],
         "Sports" : ["JawBreaker", "Lollipop", "SourCandy"]
     
-    ]
+    ] */
+    
+    var testCategories: [String: [URL]] {
+        return stickerNamesWithCategories()
+    }
+    
     
     override func viewDidLoad() {
         loadStickers()
+     //   collectionView?.backgroundColor = backgroundColor
         
-        /*
-        //get document directory url
-        let documentURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-   
-        do{
-            //get directory content urls (including subfolders urls)
-            let directoryContents = try FileManager.default.contentsOfDirectory(at: documentURL, includingPropertiesForKeys: nil, options: [])
-            print("\(directoryContents) + hello \n")
-            
-
-        } catch let error as NSError {
-            print(error.localizedDescription)
-        } */
-        
-        
-        collectionView?.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        print("\n \(testCategories)")
     }
 }
 
 
 extension StickerCollectionViewController {
-/*    private func loadStickers(_ chocoholic: Bool = false) {
-        stickers = stickerNames.filter({ name in
-            return chocoholic ? name.contains("Chocolate") : true
-        }).map ({ name in
-            let url = Bundle.main.urlForResource(name, withExtension: "png")!
-            return try! MSSticker(contentsOfFileURL: url, localizedDescription: name)
-        })
-    } */
     
      func loadStickers(_ segmentIndex: Int = 0) {
-        //var categoryName = ""
+        
         switch segmentIndex {
-            case 0:
-                categoryName = "Recent"
-            case 1:
-                categoryName = "Expressions"
-            case 2:
-                categoryName = "Funny"
-            case 3:
-                categoryName = "Fighting"
-            case 4:
-                categoryName = "Sports"
-            default:
-                break
+        case 0:
+            categoryName = "Chocolate"
+        case 1:
+            categoryName = "Gummies"
+        case 2:
+            categoryName = "Lollipop"
+        case 3:
+            categoryName = "Recent"
+        case 4:
+            categoryName = "Toffy"
+        default:
+            break
         }
         
-        
-        
-        stickerCategories = stickerNameCategories.filter({ (name, _) in
+        stickerCategories = testCategories.filter({ (name, _) in
             return name == categoryName
-            
         }).map { (name, stickerNames) in
-            let stickers : [MSSticker] = stickerNames.map { name in
-                let url = Bundle.main.url(forResource: name, withExtension: "png")!
-                
-                /*
-                print("\(url.lastPathComponent) \n")
-                let names = url.lastPathComponent
-                let render = (names as NSString).deletingPathExtension
-                print(render)*/
-
-                return try! MSSticker(contentsOfFileURL: url, localizedDescription: name)
+            let stickers : [MSSticker] = stickerNames.map { url in
+                return try! MSSticker(contentsOfFileURL: url, localizedDescription: url.lastPathComponent)
             }
             
             return StickerCategory(name: name, members: stickers)
         }
         
+        //startAnimating()
         
     }
+}
+
+//MARK: Directory Helper Methods
+extension StickerCollectionViewController {
+    func getContentsFromFolderCategory(path: String) -> [String] {
+        guard let paths = try? FileManager.default.contentsOfDirectory(atPath: path) else {return [""]}
+        return paths
+    }
+    
+    func getContentsURLsFromFolderCategory(path: URL) -> [URL]? {
+        guard let paths = try? FileManager.default.contentsOfDirectory(at: path, includingPropertiesForKeys: [URLResourceKey.nameKey], options: [.skipsHiddenFiles] )
+            else { return nil }
+        return paths
+    }
+    func getNamesFromURLs(names : [NSURL]) -> [String] {
+        let nameExtract = names.flatMap({ $0.lastPathComponent })
+        return nameExtract
+    }
+    
+    func getFolderCategoryURLs() -> [NSURL] {
+        
+        var fileNameURL: [NSURL] = []
+
+        let directoryURL = Bundle.main.resourceURL?.appendingPathComponent("Candies", isDirectory: true)
+        
+        let resourceKeys = [URLResourceKey.nameKey, URLResourceKey.isDirectoryKey]
+        let de = FileManager.default.enumerator(at: directoryURL!, includingPropertiesForKeys: resourceKeys, options: [.skipsHiddenFiles], errorHandler: nil)!
+        
+        for case let fileURL as NSURL in de {
+            
+            guard let resourceValues = try? fileURL.resourceValues(forKeys: resourceKeys),
+                
+                let isDirectory = resourceValues[URLResourceKey.isDirectoryKey] as? Bool
+               // let name = resourceValues[URLResourceKey.nameKey] as? String
+                else { continue }
+            
+            if isDirectory {
+                fileNameURL.append(fileURL)
+            }
+        }
+        return fileNameURL
+    }
+    
+    func stickerNamesWithCategories() -> [String : [URL]] {
+        var newDictionary : [String: [URL]] = [:]
+
+        let folderURLs = getFolderCategoryURLs() // [NSURL]
+        let directoryNames = getNamesFromURLs(names: folderURLs) //[String]
+      
+        
+        for(index, element) in directoryNames.enumerated() {
+            if let fileExists = getContentsURLsFromFolderCategory(path: folderURLs[index] as URL) {
+                newDictionary[element] = fileExists
+            }
+        }
+        return newDictionary
+    }
+    
 }
 
 //MARK: CollectionViewLayout
@@ -133,6 +189,10 @@ extension StickerCollectionViewController {
         
         let sticker = stickerCategories[indexPath.section].members[indexPath.row]
         cell.stickerView.sticker = sticker
+        cell.stickerView.startAnimating()
+        cell.backgroundView = UIImageView(image: UIImage(named: "z.jpeg"))
+        
+        
         return cell
 
     }
@@ -143,9 +203,9 @@ extension StickerCollectionViewController: Category {
     func setCategory(_ segmentIndex: Int) {
         loadStickers(segmentIndex)
         collectionView?.reloadData()
+        
+        ////////////
         print(stickerCategories.count)
         print(stickerCategories.description)
-       // print(stickerCategories[0].name)
-
     }
 }
