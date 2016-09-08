@@ -19,26 +19,6 @@ struct StickerCategory {
 @IBDesignable
 class StickerCollectionViewController: UICollectionViewController {
     
-  /*  @IBInspectable var cellImage: UIImage! {
-        
-    } */
-    
-    @IBOutlet weak var collectionVw: UICollectionView!
-    
-    @IBInspectable var backgroundColor: UIColor?  {
-        didSet {
-            collectionVw?.backgroundColor = backgroundColor
-        }
-    }
-    
-    /*
-    @IBInspectable var borderColor: UIColor = .clear {
-        didSet {
-            layer.borderColor = borderColor.cgColor
-        }
-    } */
-    
-    
     var stickerCategories = [StickerCategory]()
     var categoryName = ""
     
@@ -60,7 +40,7 @@ class StickerCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         loadStickers()
-     //   collectionView?.backgroundColor = backgroundColor
+      collectionView?.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         
         print("\n \(testCategories)")
     }
