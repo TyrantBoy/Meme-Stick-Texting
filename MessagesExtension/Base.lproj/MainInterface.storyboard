@@ -18,55 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jrk-Hw-Dad">
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYX-eY-K03">
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="categorySelect:" destination="ObA-dk-sSI" eventType="touchUpInside" id="aKn-qY-X1a"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoS-FQ-UPf">
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="categorySelect:" destination="ObA-dk-sSI" eventType="touchUpInside" id="Acs-1x-bNk"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huH-wf-4gI">
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="categorySelect:" destination="ObA-dk-sSI" eventType="touchUpInside" id="ixZ-Je-6fB"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mci-pb-9GH">
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="categorySelect:" destination="ObA-dk-sSI" eventType="touchUpInside" id="gu4-mw-m9n"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mp8-dF-gap">
-                                        <state key="normal" title="Button"/>
-                                        <connections>
-                                            <action selector="categorySelect:" destination="ObA-dk-sSI" eventType="touchUpInside" id="ojM-5D-RW0"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSg-Jr-jmf">
                                 <connections>
                                     <segue destination="P8J-ct-EDc" kind="embed" id="Lik-dF-WeZ"/>
                                 </connections>
                             </containerView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yye-j5-OCb">
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Jrk-Hw-Dad" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="14o-tI-hml"/>
                             <constraint firstAttribute="trailing" secondItem="sSg-Jr-jmf" secondAttribute="trailing" id="2Ds-Rl-hRN"/>
+                            <constraint firstItem="sSg-Jr-jmf" firstAttribute="top" secondItem="yye-j5-OCb" secondAttribute="bottom" id="Bjd-1Q-qh2"/>
                             <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="sSg-Jr-jmf" secondAttribute="bottom" id="JeJ-dU-YKh"/>
+                            <constraint firstAttribute="trailing" secondItem="yye-j5-OCb" secondAttribute="trailing" id="M2y-qm-lZH"/>
+                            <constraint firstItem="yye-j5-OCb" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="Qh6-IX-9sU"/>
                             <constraint firstItem="sSg-Jr-jmf" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="TNw-9R-2uk"/>
-                            <constraint firstItem="sSg-Jr-jmf" firstAttribute="top" secondItem="Jrk-Hw-Dad" secondAttribute="bottom" constant="8" id="gSp-0V-Lhp"/>
-                            <constraint firstItem="sSg-Jr-jmf" firstAttribute="top" secondItem="Jrk-Hw-Dad" secondAttribute="bottom" constant="8" id="iYo-je-Gkj"/>
-                            <constraint firstItem="Jrk-Hw-Dad" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" constant="10" id="mNP-dG-Cpy"/>
+                            <constraint firstItem="sSg-Jr-jmf" firstAttribute="top" secondItem="yye-j5-OCb" secondAttribute="bottom" id="gM6-Uv-ORy"/>
+                            <constraint firstItem="yye-j5-OCb" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="i9G-3B-Tqn"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -74,14 +47,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26" y="58"/>
+            <point key="canvasLocation" x="25.600000000000001" y="57.571214392803604"/>
         </scene>
         <!--Sticker Collection View Controller-->
         <scene sceneID="pfA-Vy-cP3">
             <objects>
                 <collectionViewController id="P8J-ct-EDc" customClass="StickerCollectionViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="YNG-g9-bVc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="470"/>
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="YNG-g9-bVc" customClass="StickerCollectionView" customModule="MessagesExtension" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="fiy-kI-0lq">
@@ -98,8 +71,25 @@
                                     <rect key="frame" x="0.0" y="0.0" width="136" height="136"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hsr-sD-tau" customClass="MSStickerView">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hsr-sD-tau" customClass="StickerView" customModule="MessagesExtension" customModuleProvider="target">
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cellBorderWidth">
+                                                    <real key="value" value="0.0"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="cellColor">
+                                                    <color key="value" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </view>
                                     </subviews>
                                 </view>
@@ -115,6 +105,15 @@
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="collectionColor">
+                                <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="image" keyPath="collectionImage" value="z.jpeg"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="viewColor">
+                                <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="dataSource" destination="P8J-ct-EDc" id="xwA-7I-WU0"/>
                             <outlet property="delegate" destination="P8J-ct-EDc" id="1JO-YL-oWa"/>
@@ -128,7 +127,10 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c21-O0-IUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="675" y="58"/>
+            <point key="canvasLocation" x="674" y="58"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="z.jpeg" width="284" height="177"/>
+    </resources>
 </document>

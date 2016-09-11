@@ -17,7 +17,6 @@ protocol Category {
 class MessagesViewController: MSMessagesAppViewController {
     
     @IBAction func categorySelect(_ sender: UIButton) {
-        print("\n \n \(sender.tag)")
         childViewControllers.forEach({ vc in
             guard let vc = vc as? Category else {return}
             vc.setCategory(sender.tag)

@@ -169,9 +169,7 @@ extension StickerCollectionViewController {
         
         let sticker = stickerCategories[indexPath.section].members[indexPath.row]
         cell.stickerView.sticker = sticker
-        cell.stickerView.startAnimating()
-        cell.backgroundView = UIImageView(image: UIImage(named: "z.jpeg"))
-        
+        cell.stickerView.startAnimating()        
         
         return cell
 
