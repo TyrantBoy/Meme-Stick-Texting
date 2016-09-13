@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -18,27 +18,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yye-j5-OCb" customClass="StickerSegmentController" customModule="MessagesExtension" customModuleProvider="target">
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                    <segment title=""/>
+                                </segments>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="segBackgroundColors">
+                                        <color key="value" red="1" green="0.72759415055382481" blue="0.66439370407737952" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="segTint">
+                                        <color key="value" red="1" green="0.44718204925969329" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="segbackground">
+                                        <color key="value" red="0.70466290080355454" green="1" blue="0.22443458163512109" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
+                                        <color key="value" red="1" green="0.63598672576817394" blue="0.20083299843526992" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="segBackground">
+                                        <color key="value" red="0.95169998178783721" green="1" blue="0.1233856128036851" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="segRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="segBorderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSg-Jr-jmf">
                                 <connections>
                                     <segue destination="P8J-ct-EDc" kind="embed" id="Lik-dF-WeZ"/>
                                 </connections>
                             </containerView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yye-j5-OCb">
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="sSg-Jr-jmf" secondAttribute="trailing" id="2Ds-Rl-hRN"/>
-                            <constraint firstItem="sSg-Jr-jmf" firstAttribute="top" secondItem="yye-j5-OCb" secondAttribute="bottom" id="Bjd-1Q-qh2"/>
+                            <constraint firstItem="sSg-Jr-jmf" firstAttribute="top" secondItem="yye-j5-OCb" secondAttribute="bottom" constant="8" id="Bjd-1Q-qh2"/>
                             <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="sSg-Jr-jmf" secondAttribute="bottom" id="JeJ-dU-YKh"/>
-                            <constraint firstAttribute="trailing" secondItem="yye-j5-OCb" secondAttribute="trailing" id="M2y-qm-lZH"/>
                             <constraint firstItem="yye-j5-OCb" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="Qh6-IX-9sU"/>
                             <constraint firstItem="sSg-Jr-jmf" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="TNw-9R-2uk"/>
-                            <constraint firstItem="sSg-Jr-jmf" firstAttribute="top" secondItem="yye-j5-OCb" secondAttribute="bottom" id="gM6-Uv-ORy"/>
+                            <constraint firstAttribute="trailing" secondItem="yye-j5-OCb" secondAttribute="trailing" id="gGv-Ej-VER"/>
+                            <constraint firstItem="sSg-Jr-jmf" firstAttribute="top" secondItem="yye-j5-OCb" secondAttribute="bottom" constant="8" id="gM6-Uv-ORy"/>
                             <constraint firstItem="yye-j5-OCb" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="i9G-3B-Tqn"/>
                         </constraints>
                     </view>
@@ -54,7 +88,7 @@
             <objects>
                 <collectionViewController id="P8J-ct-EDc" customClass="StickerCollectionViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="YNG-g9-bVc" customClass="StickerCollectionView" customModule="MessagesExtension" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="472"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="fiy-kI-0lq">

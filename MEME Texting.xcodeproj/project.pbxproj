@@ -11,6 +11,7 @@
 		AD2AB6A41D81F32800FD1DA7 /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AB6A31D81F32800FD1DA7 /* StickerView.swift */; };
 		AD2AB6A61D81F8A600FD1DA7 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = AD2AB6A51D81F8A600FD1DA7 /* 1.png */; };
 		AD2AB6A81D825A2D00FD1DA7 /* StickerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AB6A71D825A2D00FD1DA7 /* StickerCollectionView.swift */; };
+		AD2AB6AF1D84DFD900FD1DA7 /* StickerSegmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AB6AE1D84DFD900FD1DA7 /* StickerSegmentController.swift */; };
 		ADAE044F1D67605D001C15E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAE044E1D67605D001C15E8 /* Assets.xcassets */; };
 		ADAE04561D67605D001C15E8 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ADAE04551D67605D001C15E8 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ADAE045B1D67605D001C15E8 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADAE045A1D67605D001C15E8 /* Messages.framework */; };
@@ -51,6 +52,7 @@
 		AD2AB6A31D81F32800FD1DA7 /* StickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
 		AD2AB6A51D81F8A600FD1DA7 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		AD2AB6A71D825A2D00FD1DA7 /* StickerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCollectionView.swift; sourceTree = "<group>"; };
+		AD2AB6AE1D84DFD900FD1DA7 /* StickerSegmentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerSegmentController.swift; sourceTree = "<group>"; };
 		ADAE044B1D67605D001C15E8 /* MEME Texting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MEME Texting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAE044E1D67605D001C15E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADAE04501D67605D001C15E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				ADAE04851D67F545001C15E8 /* StickerCollectionViewController.swift */,
 				ADAE045D1D67605D001C15E8 /* MessagesViewController.swift */,
+				AD2AB6AE1D84DFD900FD1DA7 /* StickerSegmentController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				AD2AB6A81D825A2D00FD1DA7 /* StickerCollectionView.swift in Sources */,
 				AD2AB6A41D81F32800FD1DA7 /* StickerView.swift in Sources */,
 				ADAE04861D67F545001C15E8 /* StickerCollectionViewController.swift in Sources */,
+				AD2AB6AF1D84DFD900FD1DA7 /* StickerSegmentController.swift in Sources */,
 				ADAE04841D67F4E0001C15E8 /* StickerCollectionViewCell.swift in Sources */,
 				ADAE045E1D67605D001C15E8 /* MessagesViewController.swift in Sources */,
 			);
