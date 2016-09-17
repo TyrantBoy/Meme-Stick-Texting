@@ -31,7 +31,7 @@ class StickerCollectionViewController: UICollectionViewController {
         loadStickers()
       collectionView?.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         
-        print("\n \(testCategories)")
+        //print("\n \(testCategories)")
     }
 }
 
@@ -149,8 +149,15 @@ extension StickerCollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StickerCollectionViewCell", for: indexPath) as! StickerCollectionViewCell
-        cell.stickerView.stopAnimating()
+        if let cell = cell as? StickerCollectionViewCell {
+         cell.stickerView.stopAnimating()
+        }
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if let cell = cell as? StickerCollectionViewCell {
+            cell.stickerView.startAnimating()
+        }
     }
     
     override func collectionView(_ collectionView: UICollectionView,
@@ -162,13 +169,34 @@ extension StickerCollectionViewController {
         let sticker = stickerCategories[indexPath.section].members[indexPath.row]
         cell.stickerView.sticker = sticker
         
-        cell.stickerView.startAnimating()        
+     //   cell.stickerView.startAnimating()
         
         return cell
 
     }
     
 }
+
+//MARK: ScrollView
+
+/*
+extension StickerCollectionViewController {
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+       var offSet = scrollView.contentOffset
+       var bounds = scrollView.bounds
+       var cells = collectionView?.visibleCells
+        
+        var cell : StickerCollectionView
+     //   for cell in cells {
+   //     }
+        
+        
+        print(offSet)
+        print(bounds)
+    }
+
+ 
+} */
 
 
 //MARK: Protocol 
