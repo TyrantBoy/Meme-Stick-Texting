@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD2AB6A21D81429D00FD1DA7 /* z.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AD2AB6A11D81429D00FD1DA7 /* z.jpeg */; };
 		AD2AB6A41D81F32800FD1DA7 /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AB6A31D81F32800FD1DA7 /* StickerView.swift */; };
-		AD2AB6A61D81F8A600FD1DA7 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = AD2AB6A51D81F8A600FD1DA7 /* 1.png */; };
 		AD2AB6A81D825A2D00FD1DA7 /* StickerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AB6A71D825A2D00FD1DA7 /* StickerCollectionView.swift */; };
 		AD2AB6AF1D84DFD900FD1DA7 /* StickerSegmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AB6AE1D84DFD900FD1DA7 /* StickerSegmentController.swift */; };
 		ADAE044F1D67605D001C15E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAE044E1D67605D001C15E8 /* Assets.xcassets */; };
@@ -20,7 +18,7 @@
 		ADAE04631D67605D001C15E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04621D67605D001C15E8 /* Assets.xcassets */; };
 		ADAE04841D67F4E0001C15E8 /* StickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE04831D67F4E0001C15E8 /* StickerCollectionViewCell.swift */; };
 		ADAE04861D67F545001C15E8 /* StickerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE04851D67F545001C15E8 /* StickerCollectionViewController.swift */; };
-		ADCD696D1D740E8B00B2C145 /* Candies in Resources */ = {isa = PBXBuildFile; fileRef = ADCD696C1D740E8B00B2C145 /* Candies */; };
+		ADCD696D1D740E8B00B2C145 /* Categories in Resources */ = {isa = PBXBuildFile; fileRef = ADCD696C1D740E8B00B2C145 /* Categories */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AD2AB6A11D81429D00FD1DA7 /* z.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = z.jpeg; sourceTree = "<group>"; };
 		AD2AB6A31D81F32800FD1DA7 /* StickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
-		AD2AB6A51D81F8A600FD1DA7 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		AD2AB6A71D825A2D00FD1DA7 /* StickerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCollectionView.swift; sourceTree = "<group>"; };
 		AD2AB6AE1D84DFD900FD1DA7 /* StickerSegmentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerSegmentController.swift; sourceTree = "<group>"; };
 		ADAE044B1D67605D001C15E8 /* MEME Texting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MEME Texting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +60,7 @@
 		ADAE04641D67605D001C15E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADAE04831D67F4E0001C15E8 /* StickerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewCell.swift; sourceTree = "<group>"; };
 		ADAE04851D67F545001C15E8 /* StickerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewController.swift; sourceTree = "<group>"; };
-		ADCD696C1D740E8B00B2C145 /* Candies */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Candies; sourceTree = "<group>"; };
+		ADCD696C1D740E8B00B2C145 /* Categories */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Categories; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,9 +144,7 @@
 				AD2AB6AA1D825A3B00FD1DA7 /* Modal */,
 				AD2AB6A91D825A3300FD1DA7 /* View */,
 				AD2AB6AB1D825A4F00FD1DA7 /* Controller */,
-				AD2AB6A11D81429D00FD1DA7 /* z.jpeg */,
-				AD2AB6A51D81F8A600FD1DA7 /* 1.png */,
-				ADCD696C1D740E8B00B2C145 /* Candies */,
+				ADCD696C1D740E8B00B2C145 /* Categories */,
 				ADAE045F1D67605D001C15E8 /* MainInterface.storyboard */,
 				ADAE04621D67605D001C15E8 /* Assets.xcassets */,
 				ADAE04641D67605D001C15E8 /* Info.plist */,
@@ -251,11 +245,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD2AB6A21D81429D00FD1DA7 /* z.jpeg in Resources */,
 				ADAE04631D67605D001C15E8 /* Assets.xcassets in Resources */,
-				ADCD696D1D740E8B00B2C145 /* Candies in Resources */,
+				ADCD696D1D740E8B00B2C145 /* Categories in Resources */,
 				ADAE04611D67605D001C15E8 /* MainInterface.storyboard in Resources */,
-				AD2AB6A61D81F8A600FD1DA7 /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,26 +379,32 @@
 		ADAE04681D67605D001C15E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Messages Icon";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = S58QJ4E424;
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.donaldnguyen.MEME-Texting.MessagesExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicious.mss.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		ADAE04691D67605D001C15E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "Messages Icon";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = S58QJ4E424;
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.donaldnguyen.MEME-Texting.MessagesExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicious.mss.MessagesExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -416,7 +414,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "MEME Texting/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.donaldnguyen.MEME-Texting";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicious.mss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -429,7 +427,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "MEME Texting/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.donaldnguyen.MEME-Texting";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicious.mss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

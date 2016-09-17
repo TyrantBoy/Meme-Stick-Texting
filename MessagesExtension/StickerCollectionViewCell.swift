@@ -12,4 +12,9 @@ class StickerCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var stickerView: MSStickerView!
     
     
+    /*
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.stickerView.startAnimating()
+    } */
 }

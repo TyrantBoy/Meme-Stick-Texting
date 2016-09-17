@@ -22,17 +22,6 @@ class StickerCollectionViewController: UICollectionViewController {
     var stickerCategories = [StickerCategory]()
     var categoryName = ""
     
-    
-    /*
-    let stickerNameCategories: [String : [String]] = [
-        "Recent" : [""],
-        "Expressions" : ["CandyCane", "Caramel"],
-        "Funny": ["ChocolateBar", "ChocolateChip"],
-        "Fighting" : ["DarkChocolate", "GummiBear"],
-        "Sports" : ["JawBreaker", "Lollipop", "SourCandy"]
-    
-    ] */
-    
     var testCategories: [String: [URL]] {
         return stickerNamesWithCategories()
     }
@@ -53,15 +42,11 @@ extension StickerCollectionViewController {
         
         switch segmentIndex {
         case 0:
-            categoryName = "Chocolate"
+            categoryName = "Dance"
         case 1:
-            categoryName = "Gummies"
+            categoryName = "Fight"
         case 2:
-            categoryName = "Lollipop"
-        case 3:
-            categoryName = "Recent"
-        case 4:
-            categoryName = "Toffy"
+            categoryName = "Sports"
         default:
             break
         }
@@ -102,7 +87,7 @@ extension StickerCollectionViewController {
         
         var fileNameURL: [NSURL] = []
 
-        let directoryURL = Bundle.main.resourceURL?.appendingPathComponent("Candies", isDirectory: true)
+        let directoryURL = Bundle.main.resourceURL?.appendingPathComponent("Categories", isDirectory: true)
         
         let resourceKeys = [URLResourceKey.nameKey, URLResourceKey.isDirectoryKey]
         let de = FileManager.default.enumerator(at: directoryURL!, includingPropertiesForKeys: resourceKeys, options: [.skipsHiddenFiles], errorHandler: nil)!
@@ -140,11 +125,13 @@ extension StickerCollectionViewController {
 }
 
 //MARK: CollectionViewLayout
+
+//min spacing in Sticker Collection View 1x1, so we - 2 width 
 extension StickerCollectionViewController {
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let edge = min(collectionView.bounds.width / 3, 136)
+        let edge = min((collectionView.bounds.width - 2) / 3, 136)
         return CGSize(width: edge, height: edge)
     }
 }
@@ -161,6 +148,11 @@ extension StickerCollectionViewController {
         return stickerCategories[section].members.count
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StickerCollectionViewCell", for: indexPath) as! StickerCollectionViewCell
+        cell.stickerView.stopAnimating()
+    }
+    
     override func collectionView(_ collectionView: UICollectionView,
                                  cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(
@@ -169,12 +161,15 @@ extension StickerCollectionViewController {
         
         let sticker = stickerCategories[indexPath.section].members[indexPath.row]
         cell.stickerView.sticker = sticker
+        
         cell.stickerView.startAnimating()        
         
         return cell
 
     }
+    
 }
+
 
 //MARK: Protocol 
 extension StickerCollectionViewController: Category {
@@ -183,7 +178,7 @@ extension StickerCollectionViewController: Category {
         collectionView?.reloadData()
         
         ////////////
-        print(stickerCategories.count)
-        print(stickerCategories.description)
+      //  print(stickerCategories.count)
+        //print(stickerCategories.description)
     }
 }

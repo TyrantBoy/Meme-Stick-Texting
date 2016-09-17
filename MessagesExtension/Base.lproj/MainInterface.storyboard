@@ -18,62 +18,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yye-j5-OCb" customClass="StickerSegmentController" customModule="MessagesExtension" customModuleProvider="target">
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                    <segment title=""/>
-                                </segments>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="segBackgroundColors">
-                                        <color key="value" red="1" green="0.72759415055382481" blue="0.66439370407737952" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="segTint">
-                                        <color key="value" red="1" green="0.44718204925969329" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="segbackground">
-                                        <color key="value" red="0.70466290080355454" green="1" blue="0.22443458163512109" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="background">
-                                        <color key="value" red="1" green="0.63598672576817394" blue="0.20083299843526992" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="segBackground">
-                                        <color key="value" red="0.95169998178783721" green="1" blue="0.1233856128036851" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="segRadius">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="segBorderWidth">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSg-Jr-jmf">
                                 <connections>
                                     <segue destination="P8J-ct-EDc" kind="embed" id="Lik-dF-WeZ"/>
                                 </connections>
                             </containerView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="CgX-OL-qjq">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhS-pZ-5AU">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="gBM-HF-bTU"/>
+                                            <constraint firstAttribute="height" constant="30" id="tFB-gH-1p7"/>
+                                        </constraints>
+                                        <state key="normal" image="Dancing"/>
+                                        <connections>
+                                            <action selector="categorySelect:" destination="ObA-dk-sSI" eventType="touchUpInside" id="zgQ-yj-T3x"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgI-dU-BwV">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="7Fl-iX-uQp"/>
+                                            <constraint firstAttribute="height" constant="30" id="fnx-Hy-lYx"/>
+                                        </constraints>
+                                        <state key="normal" image="Stick Fighting"/>
+                                        <connections>
+                                            <action selector="categorySelect:" destination="ObA-dk-sSI" eventType="touchUpInside" id="Pbt-6z-AfH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LP3-K0-7rb">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="F0E-c7-S4W"/>
+                                            <constraint firstAttribute="height" constant="30" id="TQS-m0-RV3"/>
+                                        </constraints>
+                                        <state key="normal" image="Running"/>
+                                        <connections>
+                                            <action selector="categorySelect:" destination="ObA-dk-sSI" eventType="touchUpInside" id="c15-ka-evP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="sSg-Jr-jmf" secondAttribute="trailing" id="2Ds-Rl-hRN"/>
-                            <constraint firstItem="sSg-Jr-jmf" firstAttribute="top" secondItem="yye-j5-OCb" secondAttribute="bottom" constant="8" id="Bjd-1Q-qh2"/>
+                            <constraint firstItem="CgX-OL-qjq" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" constant="8" id="9xq-wW-9Xf"/>
                             <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="sSg-Jr-jmf" secondAttribute="bottom" id="JeJ-dU-YKh"/>
-                            <constraint firstItem="yye-j5-OCb" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" id="Qh6-IX-9sU"/>
                             <constraint firstItem="sSg-Jr-jmf" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="TNw-9R-2uk"/>
-                            <constraint firstAttribute="trailing" secondItem="yye-j5-OCb" secondAttribute="trailing" id="gGv-Ej-VER"/>
-                            <constraint firstItem="sSg-Jr-jmf" firstAttribute="top" secondItem="yye-j5-OCb" secondAttribute="bottom" constant="8" id="gM6-Uv-ORy"/>
-                            <constraint firstItem="yye-j5-OCb" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="i9G-3B-Tqn"/>
+                            <constraint firstItem="sSg-Jr-jmf" firstAttribute="top" secondItem="CgX-OL-qjq" secondAttribute="bottom" constant="8" id="pl3-Zg-OPD"/>
+                            <constraint firstItem="CgX-OL-qjq" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" constant="8" id="whH-a2-twe"/>
+                            <constraint firstAttribute="trailing" secondItem="CgX-OL-qjq" secondAttribute="trailing" constant="8" id="yU5-ep-8kS"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -81,17 +74,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="25.600000000000001" y="57.571214392803604"/>
+            <point key="canvasLocation" x="62.399999999999999" y="57.571214392803604"/>
         </scene>
         <!--Sticker Collection View Controller-->
         <scene sceneID="pfA-Vy-cP3">
             <objects>
                 <collectionViewController id="P8J-ct-EDc" customClass="StickerCollectionViewController" customModule="MessagesExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="YNG-g9-bVc" customClass="StickerCollectionView" customModule="MessagesExtension" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="472"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="462"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="fiy-kI-0lq">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="fiy-kI-0lq">
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -115,13 +108,13 @@
                                                     <real key="value" value="5"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                    <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
-                                                    <real key="value" value="20"/>
+                                                    <real key="value" value="15"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="color" keyPath="cellColor">
-                                                    <color key="value" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </view>
@@ -145,7 +138,7 @@
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="image" keyPath="collectionImage" value="z.jpeg"/>
                             <userDefinedRuntimeAttribute type="color" keyPath="viewColor">
-                                <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                         <connections>
@@ -165,6 +158,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Dancing" width="128" height="128"/>
+        <image name="Running" width="128" height="128"/>
+        <image name="Stick Fighting" width="128" height="128"/>
         <image name="z.jpeg" width="284" height="177"/>
     </resources>
 </document>
