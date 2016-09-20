@@ -23,5 +23,4 @@ class MessagesViewController: MSMessagesAppViewController {
         })
     }
     
-  //testing
 }
