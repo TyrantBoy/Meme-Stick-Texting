@@ -8,6 +8,7 @@
 
 import UIKit
 import Messages
+import FBSDKCoreKit
 
 
 protocol Category {
@@ -15,6 +16,11 @@ protocol Category {
 }
 
 class MessagesViewController: MSMessagesAppViewController {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        FBSDKAppEvents.activateApp()
+    }
     
     @IBAction func categorySelect(_ sender: UIButton) {
         childViewControllers.forEach({ vc in

@@ -27,5 +27,18 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.message-payload-provider</string>
 	</dict>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb1809494825928604</string>
+            </array>
+        </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>1809494825928604</string>
+    <key>FacebookDisplayName</key>
+    <string>Animated Stick Stickers</string>
 </dict>
 </plist>
