@@ -55,7 +55,7 @@
 		AD30204A1D925ED300863C0F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		AD30204C1D925EDA00863C0F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		AD30204E1D93082900863C0F /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		ADAE044B1D67605D001C15E8 /* MEME Texting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MEME Texting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADAE044B1D67605D001C15E8 /* Animated Stickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animated Stickers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAE044E1D67605D001C15E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADAE04501D67605D001C15E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADAE04551D67605D001C15E8 /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,7 +131,7 @@
 		ADAE044C1D67605D001C15E8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ADAE044B1D67605D001C15E8 /* MEME Texting.app */,
+				ADAE044B1D67605D001C15E8 /* Animated Stickers.app */,
 				ADAE04551D67605D001C15E8 /* MessagesExtension.appex */,
 			);
 			name = Products;
@@ -174,9 +174,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ADAE044A1D67605D001C15E8 /* MEME Texting */ = {
+		ADAE044A1D67605D001C15E8 /* Animated Stickers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADAE046B1D67605D001C15E8 /* Build configuration list for PBXNativeTarget "MEME Texting" */;
+			buildConfigurationList = ADAE046B1D67605D001C15E8 /* Build configuration list for PBXNativeTarget "Animated Stickers" */;
 			buildPhases = (
 				ADAE04491D67605D001C15E8 /* Resources */,
 				ADAE046A1D67605D001C15E8 /* Embed App Extensions */,
@@ -186,9 +186,9 @@
 			dependencies = (
 				ADAE04581D67605D001C15E8 /* PBXTargetDependency */,
 			);
-			name = "MEME Texting";
+			name = "Animated Stickers";
 			productName = "MEME Texting";
-			productReference = ADAE044B1D67605D001C15E8 /* MEME Texting.app */;
+			productReference = ADAE044B1D67605D001C15E8 /* Animated Stickers.app */;
 			productType = "com.apple.product-type.application.messages";
 		};
 		ADAE04541D67605D001C15E8 /* MessagesExtension */ = {
@@ -232,7 +232,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ADAE04481D67605D001C15E8 /* Build configuration list for PBXProject "MEME Texting" */;
+			buildConfigurationList = ADAE04481D67605D001C15E8 /* Build configuration list for PBXProject "Animated Stickers" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -245,7 +245,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ADAE044A1D67605D001C15E8 /* MEME Texting */,
+				ADAE044A1D67605D001C15E8 /* Animated Stickers */,
 				ADAE04541D67605D001C15E8 /* MessagesExtension */,
 			);
 		};
@@ -465,7 +465,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ADAE04481D67605D001C15E8 /* Build configuration list for PBXProject "MEME Texting" */ = {
+		ADAE04481D67605D001C15E8 /* Build configuration list for PBXProject "Animated Stickers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADAE04651D67605D001C15E8 /* Debug */,
@@ -483,7 +483,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADAE046B1D67605D001C15E8 /* Build configuration list for PBXNativeTarget "MEME Texting" */ = {
+		ADAE046B1D67605D001C15E8 /* Build configuration list for PBXNativeTarget "Animated Stickers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADAE046C1D67605D001C15E8 /* Debug */,

@@ -18,7 +18,7 @@
                BlueprintIdentifier = "ADAE04541D67605D001C15E8"
                BuildableName = "MessagesExtension.appex"
                BlueprintName = "MessagesExtension"
-               ReferencedContainer = "container:MEME Texting.xcodeproj">
+               ReferencedContainer = "container:Animated Stickers.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "ADAE044A1D67605D001C15E8"
-               BuildableName = "MEME Texting.app"
-               BlueprintName = "MEME Texting"
-               ReferencedContainer = "container:MEME Texting.xcodeproj">
+               BuildableName = "Animated Stickers.app"
+               BlueprintName = "Animated Stickers"
+               ReferencedContainer = "container:Animated Stickers.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -50,7 +50,7 @@
             BlueprintIdentifier = "ADAE04541D67605D001C15E8"
             BuildableName = "MessagesExtension.appex"
             BlueprintName = "MessagesExtension"
-            ReferencedContainer = "container:MEME Texting.xcodeproj">
+            ReferencedContainer = "container:Animated Stickers.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ADAE044A1D67605D001C15E8"
-            BuildableName = "MEME Texting.app"
-            BlueprintName = "MEME Texting"
-            ReferencedContainer = "container:MEME Texting.xcodeproj">
+            BuildableName = "Animated Stickers.app"
+            BlueprintName = "Animated Stickers"
+            ReferencedContainer = "container:Animated Stickers.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -92,9 +92,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "ADAE044A1D67605D001C15E8"
-            BuildableName = "MEME Texting.app"
-            BlueprintName = "MEME Texting"
-            ReferencedContainer = "container:MEME Texting.xcodeproj">
+            BuildableName = "Animated Stickers.app"
+            BlueprintName = "Animated Stickers"
+            ReferencedContainer = "container:Animated Stickers.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
