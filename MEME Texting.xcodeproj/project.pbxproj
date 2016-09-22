@@ -10,6 +10,9 @@
 		AD2AB6A41D81F32800FD1DA7 /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AB6A31D81F32800FD1DA7 /* StickerView.swift */; };
 		AD2AB6A81D825A2D00FD1DA7 /* StickerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AB6A71D825A2D00FD1DA7 /* StickerCollectionView.swift */; };
 		AD2AB6AF1D84DFD900FD1DA7 /* StickerSegmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2AB6AE1D84DFD900FD1DA7 /* StickerSegmentController.swift */; };
+		AD30204B1D925ED300863C0F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD30204A1D925ED300863C0F /* Bolts.framework */; };
+		AD30204D1D925EDA00863C0F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD30204C1D925EDA00863C0F /* FBSDKCoreKit.framework */; };
+		AD30204F1D93082A00863C0F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD30204E1D93082900863C0F /* Extension.swift */; };
 		ADAE044F1D67605D001C15E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAE044E1D67605D001C15E8 /* Assets.xcassets */; };
 		ADAE04561D67605D001C15E8 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ADAE04551D67605D001C15E8 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ADAE045B1D67605D001C15E8 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADAE045A1D67605D001C15E8 /* Messages.framework */; };
@@ -49,6 +52,9 @@
 		AD2AB6A31D81F32800FD1DA7 /* StickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
 		AD2AB6A71D825A2D00FD1DA7 /* StickerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCollectionView.swift; sourceTree = "<group>"; };
 		AD2AB6AE1D84DFD900FD1DA7 /* StickerSegmentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerSegmentController.swift; sourceTree = "<group>"; };
+		AD30204A1D925ED300863C0F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		AD30204C1D925EDA00863C0F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		AD30204E1D93082900863C0F /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		ADAE044B1D67605D001C15E8 /* MEME Texting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MEME Texting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAE044E1D67605D001C15E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADAE04501D67605D001C15E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +75,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADAE045B1D67605D001C15E8 /* Messages.framework in Frameworks */,
+				AD30204D1D925EDA00863C0F /* FBSDKCoreKit.framework in Frameworks */,
+				AD30204B1D925ED300863C0F /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +110,14 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		AD3020501D930B2A00863C0F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				AD30204E1D93082900863C0F /* Extension.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		ADAE04441D67605D001C15E8 = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +149,8 @@
 		ADAE04591D67605D001C15E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AD30204C1D925EDA00863C0F /* FBSDKCoreKit.framework */,
+				AD30204A1D925ED300863C0F /* Bolts.framework */,
 				ADAE045A1D67605D001C15E8 /* Messages.framework */,
 			);
 			name = Frameworks;
@@ -141,6 +159,7 @@
 		ADAE045C1D67605D001C15E8 /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
+				AD3020501D930B2A00863C0F /* Helper */,
 				AD2AB6AA1D825A3B00FD1DA7 /* Modal */,
 				AD2AB6A91D825A3300FD1DA7 /* View */,
 				AD2AB6AB1D825A4F00FD1DA7 /* Controller */,
@@ -260,6 +279,7 @@
 			files = (
 				AD2AB6A81D825A2D00FD1DA7 /* StickerCollectionView.swift in Sources */,
 				AD2AB6A41D81F32800FD1DA7 /* StickerView.swift in Sources */,
+				AD30204F1D93082A00863C0F /* Extension.swift in Sources */,
 				ADAE04861D67F545001C15E8 /* StickerCollectionViewController.swift in Sources */,
 				AD2AB6AF1D84DFD900FD1DA7 /* StickerSegmentController.swift in Sources */,
 				ADAE04841D67F4E0001C15E8 /* StickerCollectionViewCell.swift in Sources */,
@@ -382,6 +402,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Messages Icon";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = S58QJ4E424;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.applicious.mss.MessagesExtension;
@@ -398,6 +422,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "Messages Icon";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = S58QJ4E424;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MessagesExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.applicious.mss.MessagesExtension;
