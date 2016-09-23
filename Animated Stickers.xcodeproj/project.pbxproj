@@ -21,6 +21,12 @@
 		ADAE04631D67605D001C15E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04621D67605D001C15E8 /* Assets.xcassets */; };
 		ADAE04841D67F4E0001C15E8 /* StickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE04831D67F4E0001C15E8 /* StickerCollectionViewCell.swift */; };
 		ADAE04861D67F545001C15E8 /* StickerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE04851D67F545001C15E8 /* StickerCollectionViewController.swift */; };
+		ADCC64071D93B2A70047EA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC64061D93B2A70047EA86 /* AppDelegate.swift */; };
+		ADCC64091D93B2A70047EA86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC64081D93B2A70047EA86 /* ViewController.swift */; };
+		ADCC640C1D93B2A70047EA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCC640A1D93B2A70047EA86 /* Main.storyboard */; };
+		ADCC640E1D93B2A70047EA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCC640D1D93B2A70047EA86 /* Assets.xcassets */; };
+		ADCC64111D93B2A70047EA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCC640F1D93B2A70047EA86 /* LaunchScreen.storyboard */; };
+		ADCC642B1D93B4390047EA86 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ADAE04551D67605D001C15E8 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		ADCD696D1D740E8B00B2C145 /* Categories in Resources */ = {isa = PBXBuildFile; fileRef = ADCD696C1D740E8B00B2C145 /* Categories */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +52,17 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ADCC642A1D93B4140047EA86 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ADCC642B1D93B4390047EA86 /* MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +83,14 @@
 		ADAE04641D67605D001C15E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADAE04831D67F4E0001C15E8 /* StickerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewCell.swift; sourceTree = "<group>"; };
 		ADAE04851D67F545001C15E8 /* StickerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewController.swift; sourceTree = "<group>"; };
+		ADCC64041D93B2A70047EA86 /* Animated Stick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animated Stick.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADCC64061D93B2A70047EA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADCC64081D93B2A70047EA86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADCC640B1D93B2A70047EA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADCC640D1D93B2A70047EA86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADCC64101D93B2A70047EA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADCC64121D93B2A70047EA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADCC641B1D93B4140047EA86 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		ADCD696C1D740E8B00B2C145 /* Categories */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Categories; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +102,13 @@
 				ADAE045B1D67605D001C15E8 /* Messages.framework in Frameworks */,
 				AD30204D1D925EDA00863C0F /* FBSDKCoreKit.framework in Frameworks */,
 				AD30204B1D925ED300863C0F /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCC64011D93B2A70047EA86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +155,7 @@
 			children = (
 				ADAE044D1D67605D001C15E8 /* MEME Texting */,
 				ADAE045C1D67605D001C15E8 /* MessagesExtension */,
+				ADCC64051D93B2A70047EA86 /* Animated Stick */,
 				ADAE04591D67605D001C15E8 /* Frameworks */,
 				ADAE044C1D67605D001C15E8 /* Products */,
 			);
@@ -133,6 +166,7 @@
 			children = (
 				ADAE044B1D67605D001C15E8 /* Animated Stickers.app */,
 				ADAE04551D67605D001C15E8 /* MessagesExtension.appex */,
+				ADCC64041D93B2A70047EA86 /* Animated Stick.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +186,7 @@
 				AD30204C1D925EDA00863C0F /* FBSDKCoreKit.framework */,
 				AD30204A1D925ED300863C0F /* Bolts.framework */,
 				ADAE045A1D67605D001C15E8 /* Messages.framework */,
+				ADCC641B1D93B4140047EA86 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,6 +204,19 @@
 				ADAE04641D67605D001C15E8 /* Info.plist */,
 			);
 			path = MessagesExtension;
+			sourceTree = "<group>";
+		};
+		ADCC64051D93B2A70047EA86 /* Animated Stick */ = {
+			isa = PBXGroup;
+			children = (
+				ADCC64061D93B2A70047EA86 /* AppDelegate.swift */,
+				ADCC64081D93B2A70047EA86 /* ViewController.swift */,
+				ADCC640A1D93B2A70047EA86 /* Main.storyboard */,
+				ADCC640D1D93B2A70047EA86 /* Assets.xcassets */,
+				ADCC640F1D93B2A70047EA86 /* LaunchScreen.storyboard */,
+				ADCC64121D93B2A70047EA86 /* Info.plist */,
+			);
+			path = "Animated Stick";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +256,24 @@
 			productReference = ADAE04551D67605D001C15E8 /* MessagesExtension.appex */;
 			productType = "com.apple.product-type.app-extension.messages";
 		};
+		ADCC64031D93B2A70047EA86 /* Animated Stick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADCC64131D93B2A70047EA86 /* Build configuration list for PBXNativeTarget "Animated Stick" */;
+			buildPhases = (
+				ADCC64001D93B2A70047EA86 /* Sources */,
+				ADCC64011D93B2A70047EA86 /* Frameworks */,
+				ADCC64021D93B2A70047EA86 /* Resources */,
+				ADCC642A1D93B4140047EA86 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Animated Stick";
+			productName = "Animated Stick";
+			productReference = ADCC64041D93B2A70047EA86 /* Animated Stick.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -230,6 +296,11 @@
 						DevelopmentTeamName = "Donald Nguyen";
 						ProvisioningStyle = Automatic;
 					};
+					ADCC64031D93B2A70047EA86 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = S58QJ4E424;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = ADAE04481D67605D001C15E8 /* Build configuration list for PBXProject "Animated Stickers" */;
@@ -247,6 +318,7 @@
 			targets = (
 				ADAE044A1D67605D001C15E8 /* Animated Stickers */,
 				ADAE04541D67605D001C15E8 /* MessagesExtension */,
+				ADCC64031D93B2A70047EA86 /* Animated Stick */,
 			);
 		};
 /* End PBXProject section */
@@ -270,6 +342,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ADCC64021D93B2A70047EA86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCC64111D93B2A70047EA86 /* LaunchScreen.storyboard in Resources */,
+				ADCC640E1D93B2A70047EA86 /* Assets.xcassets in Resources */,
+				ADCC640C1D93B2A70047EA86 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -284,6 +366,15 @@
 				AD2AB6AF1D84DFD900FD1DA7 /* StickerSegmentController.swift in Sources */,
 				ADAE04841D67F4E0001C15E8 /* StickerCollectionViewCell.swift in Sources */,
 				ADAE045E1D67605D001C15E8 /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCC64001D93B2A70047EA86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADCC64091D93B2A70047EA86 /* ViewController.swift in Sources */,
+				ADCC64071D93B2A70047EA86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +395,22 @@
 				ADAE04601D67605D001C15E8 /* Base */,
 			);
 			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		ADCC640A1D93B2A70047EA86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADCC640B1D93B2A70047EA86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADCC640F1D93B2A70047EA86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADCC64101D93B2A70047EA86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -462,6 +569,38 @@
 			};
 			name = Release;
 		};
+		ADCC64141D93B2A70047EA86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = S58QJ4E424;
+				INFOPLIST_FILE = "Animated Stick/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicious.mss;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ADCC64151D93B2A70047EA86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = S58QJ4E424;
+				INFOPLIST_FILE = "Animated Stick/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.applicious.mss;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -491,6 +630,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		ADCC64131D93B2A70047EA86 /* Build configuration list for PBXNativeTarget "Animated Stick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADCC64141D93B2A70047EA86 /* Debug */,
+				ADCC64151D93B2A70047EA86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
