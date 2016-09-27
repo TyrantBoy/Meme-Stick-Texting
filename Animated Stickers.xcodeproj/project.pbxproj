@@ -21,13 +21,20 @@
 		ADAE04631D67605D001C15E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAE04621D67605D001C15E8 /* Assets.xcassets */; };
 		ADAE04841D67F4E0001C15E8 /* StickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE04831D67F4E0001C15E8 /* StickerCollectionViewCell.swift */; };
 		ADAE04861D67F545001C15E8 /* StickerCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAE04851D67F545001C15E8 /* StickerCollectionViewController.swift */; };
+		ADB4C65B1D9A42DD00DB2D32 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB4C65A1D9A42DD00DB2D32 /* MainVC.swift */; };
+		ADC012481D960EAA003FAEDE /* RoundIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC012471D960EAA003FAEDE /* RoundIt.swift */; };
+		ADC0124A1D99C918003FAEDE /* ButtonIt.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC012491D99C918003FAEDE /* ButtonIt.swift */; };
 		ADCC64071D93B2A70047EA86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC64061D93B2A70047EA86 /* AppDelegate.swift */; };
-		ADCC64091D93B2A70047EA86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC64081D93B2A70047EA86 /* ViewController.swift */; };
+		ADCC64091D93B2A70047EA86 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC64081D93B2A70047EA86 /* OnboardingVC.swift */; };
 		ADCC640C1D93B2A70047EA86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCC640A1D93B2A70047EA86 /* Main.storyboard */; };
 		ADCC640E1D93B2A70047EA86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADCC640D1D93B2A70047EA86 /* Assets.xcassets */; };
 		ADCC64111D93B2A70047EA86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADCC640F1D93B2A70047EA86 /* LaunchScreen.storyboard */; };
 		ADCC642B1D93B4390047EA86 /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ADAE04551D67605D001C15E8 /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ADCC64351D95F3E40047EA86 /* OnboardingPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCC64341D95F3E40047EA86 /* OnboardingPageVC.swift */; };
 		ADCD696D1D740E8B00B2C145 /* Categories in Resources */ = {isa = PBXBuildFile; fileRef = ADCD696C1D740E8B00B2C145 /* Categories */; };
+		ADCD8F0F1D99E36500B3F354 /* OnePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD8F0E1D99E36500B3F354 /* OnePageVC.swift */; };
+		ADCD8F111D99F7EA00B3F354 /* FourPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD8F101D99F7EA00B3F354 /* FourPageVC.swift */; };
+		ADCD8F131D9A11DB00B3F354 /* FinalPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCD8F121D9A11DB00B3F354 /* FinalPageVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,15 +90,22 @@
 		ADAE04641D67605D001C15E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADAE04831D67F4E0001C15E8 /* StickerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewCell.swift; sourceTree = "<group>"; };
 		ADAE04851D67F545001C15E8 /* StickerCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCollectionViewController.swift; sourceTree = "<group>"; };
+		ADB4C65A1D9A42DD00DB2D32 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		ADC012471D960EAA003FAEDE /* RoundIt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundIt.swift; sourceTree = "<group>"; };
+		ADC012491D99C918003FAEDE /* ButtonIt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonIt.swift; sourceTree = "<group>"; };
 		ADCC64041D93B2A70047EA86 /* Animated Stick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animated Stick.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADCC64061D93B2A70047EA86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ADCC64081D93B2A70047EA86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADCC64081D93B2A70047EA86 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
 		ADCC640B1D93B2A70047EA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADCC640D1D93B2A70047EA86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADCC64101D93B2A70047EA86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADCC64121D93B2A70047EA86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADCC641B1D93B4140047EA86 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		ADCC64341D95F3E40047EA86 /* OnboardingPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingPageVC.swift; sourceTree = "<group>"; };
 		ADCD696C1D740E8B00B2C145 /* Categories */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Categories; sourceTree = "<group>"; };
+		ADCD8F0E1D99E36500B3F354 /* OnePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnePageVC.swift; sourceTree = "<group>"; };
+		ADCD8F101D99F7EA00B3F354 /* FourPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourPageVC.swift; sourceTree = "<group>"; };
+		ADCD8F121D9A11DB00B3F354 /* FinalPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalPageVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,11 +224,18 @@
 			isa = PBXGroup;
 			children = (
 				ADCC64061D93B2A70047EA86 /* AppDelegate.swift */,
-				ADCC64081D93B2A70047EA86 /* ViewController.swift */,
+				ADCC64081D93B2A70047EA86 /* OnboardingVC.swift */,
+				ADCC64341D95F3E40047EA86 /* OnboardingPageVC.swift */,
+				ADC012471D960EAA003FAEDE /* RoundIt.swift */,
+				ADB4C65A1D9A42DD00DB2D32 /* MainVC.swift */,
+				ADC012491D99C918003FAEDE /* ButtonIt.swift */,
 				ADCC640A1D93B2A70047EA86 /* Main.storyboard */,
+				ADCD8F121D9A11DB00B3F354 /* FinalPageVC.swift */,
 				ADCC640D1D93B2A70047EA86 /* Assets.xcassets */,
+				ADCD8F101D99F7EA00B3F354 /* FourPageVC.swift */,
 				ADCC640F1D93B2A70047EA86 /* LaunchScreen.storyboard */,
 				ADCC64121D93B2A70047EA86 /* Info.plist */,
+				ADCD8F0E1D99E36500B3F354 /* OnePageVC.swift */,
 			);
 			path = "Animated Stick";
 			sourceTree = "<group>";
@@ -373,7 +394,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADCC64091D93B2A70047EA86 /* ViewController.swift in Sources */,
+				ADCD8F111D99F7EA00B3F354 /* FourPageVC.swift in Sources */,
+				ADCC64351D95F3E40047EA86 /* OnboardingPageVC.swift in Sources */,
+				ADCD8F0F1D99E36500B3F354 /* OnePageVC.swift in Sources */,
+				ADC0124A1D99C918003FAEDE /* ButtonIt.swift in Sources */,
+				ADB4C65B1D9A42DD00DB2D32 /* MainVC.swift in Sources */,
+				ADCD8F131D9A11DB00B3F354 /* FinalPageVC.swift in Sources */,
+				ADC012481D960EAA003FAEDE /* RoundIt.swift in Sources */,
+				ADCC64091D93B2A70047EA86 /* OnboardingVC.swift in Sources */,
 				ADCC64071D93B2A70047EA86 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,6 +610,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.applicious.mss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -598,6 +627,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.applicious.mss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -638,6 +668,7 @@
 				ADCC64151D93B2A70047EA86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
